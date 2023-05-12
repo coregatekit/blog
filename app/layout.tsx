@@ -15,9 +15,9 @@ export default function RootLayout({
     <header>
       <div className='text-center bg-slate-800 p-8 my-6 rounded-md'>
         <Link href="/">
-          <h1 className="text-3xl text-white font-bold">Joe Kim's blog.</h1>
+          <h1 className="text-3xl text-white font-bold">coregate.dev</h1>
         </Link>
-        <p className='text-slate-300'>Welcome to my blog. 💻</p>
+        <p className='text-slate-300'>Just a little blog from an ordinary guy. 💻</p>
       </div>
     </header>
   );
@@ -27,8 +27,9 @@ export default function RootLayout({
       <div className='border-t border-slate-500 mt-6 py-6 text-center text-slate-500'>
         <h3>
           Created by{" "}
-          <Link href={"https://github.com/coregatekit"}>coregatekit</Link>.
+          <Link href={"https://github.com/coregatekit"} className='text-blue-400'>coregatekit</Link>.
         </h3>
+        <h3>This project is the result from learning with <Link href="https://www.youtube.com/watch?v=Hiabp1GY8fA" className='text-violet-400'>"pixegami"</Link>.</h3>
       </div>
     </footer>
   );
