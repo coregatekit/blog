@@ -1,4 +1,4 @@
-import './globals.css';
+import "./globals.css";
 import Link from "next/link";
 
 export const metadata = {
@@ -13,19 +13,18 @@ export default function RootLayout({
 }) {
   const header = (
     <header>
-      <div>
+      <div className='text-center bg-slate-800 p-8 my-6 rounded-md'>
         <Link href="/">
-          <h1>Joe Kim's blog.</h1>
+          <h1 className="text-3xl text-white font-bold">Joe Kim's blog.</h1>
         </Link>
-        <p>Welcome to my blog. 💻</p>
+        <p className='text-slate-300'>Welcome to my blog. 💻</p>
       </div>
     </header>
   );
 
   const footer = (
     <footer>
-      <div>
-        <br />
+      <div className='border-t border-slate-500 mt-6 py-6 text-center text-slate-500'>
         <h3>
           Created by{" "}
           <Link href={"https://github.com/coregatekit"}>coregatekit</Link>.
@@ -37,9 +36,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        {header}
-        {children}
-        {footer}
+        <div className='mx-auto max-w-2xl'>
+          {header}
+          {children}
+          {footer}
+        </div>
       </body>
     </html>
   );
